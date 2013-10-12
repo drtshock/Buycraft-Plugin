@@ -96,7 +96,7 @@ public class Plugin extends JavaPlugin implements Listener {
         language = new Language();
         
         if (settings.getBoolean("autoUpdate")) {
-    		this.updater = new Updater(this, "buycraft", this.getFile(), Updater.UpdateType.DEFAULT, true);
+    		this.updater = new Updater(this, 31571, this.getFile(), Updater.UpdateType.DEFAULT, true);
     	} else {
     		getLogger().info("Ignoring update due to auto update disabled.");
     	}
